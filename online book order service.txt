@@ -1,0 +1,46 @@
+def info():
+  print("\nCustomer Details:\n","Name:",Name,"\n","ID:",ID,"\n","address:",address)
+  if Category==1:
+    print(" type of book : adventure of history")
+  elif Category==2:
+    print(" type of book : magic land")
+  elif Category==3:
+    print(" type of book : agiriculture")
+  elif Category==4:
+    print(" type of book : hindi learning")
+  print(" Amount :",rate_of_book)   
+Name=input("Enter your Name : ")
+ID=input("Enter your ID : ")
+address=input("enter your address:")
+Typeofbook=input(" Choose 1 for adventure of history \n Choose 2 for magic land\n Choose 3 for agiriculture \n Choose 4 for hindi learning : ")
+Category=int(Typeofbook)
+adventure_of_history=1
+magic_land=2
+agiriculture=3
+hindi_learning=4
+if (Category >=1 and Category <=4):
+    if Category == 1:
+        number_of_book=int(input("number of book:"))
+        rate_of_book= number_of_book*50
+        print("You have been price Rs.",rate_of_book)
+        info()
+    elif Category==2:
+        number_of_book=int(input("number of book:"))
+        rate_of_book= number_of_book*45
+        print("You have been price Rs.",rate_of_book)
+        info()
+    elif Category==3:
+        number_of_book=int(input("number of book:"))
+        rate_of_book= number_of_book*75
+        print("You have been price Rs.",rate_of_book)
+        info()
+    elif Category==4:
+        number_of_book=int(input("number of book:"))
+        rate_of_book= number_of_book*100
+        print("You have been price Rs.",rate_of_book)
+        info()
+    else:
+        print("Not available.")
+else:
+  print("provide is not available")
+
