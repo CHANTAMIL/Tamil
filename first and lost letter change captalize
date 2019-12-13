@@ -1,0 +1,17 @@
+def split(word): 
+    return [char for char in word]  
+s=input()
+k=list(s)
+s=['a','A']
+n=['m','M']
+h=['z','Z']
+if k[0] in s:
+    if k[len(k)//2] in n:
+        if k[-1] in h:
+            print("1")
+        else:
+            print('0')
+    else:
+        print('0')
+else:
+    print('0')
