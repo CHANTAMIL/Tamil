@@ -1,0 +1,7 @@
+k=['monday','tuesday','wednesday','thursday','friday']
+l=['saturday','sunday']
+n=input()
+if n in k:
+    print('no')
+elif n in l:
+    print('yes')
